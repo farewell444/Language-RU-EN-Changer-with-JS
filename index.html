@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Language Translation Demo</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" />
+
+</head>
+<body>
+  <header>
+    <h1 id="main-word">Welcome to Language Translation Demo</h1>
+    <nav>
+      <ul>
+				<li class="dropdown">
+					<a href="#" class="dropbtn">
+						<span class="flag-icon flag-icon-us"></span> English
+					</a>
+					<div class="dropdown-content">
+						<a href="#" id="lang-en"><span class="flag-icon flag-icon-us"></span>English</a>
+						<a href="#" id="lang-ru"><span class="flag-icon flag-icon-ru"></span>Russian</a>
+						<a href="#" id="lang-kk"><span class="flag-icon flag-icon-kz"></span>Kazakh</a>
+						<a href="#" id="lang-es"><span class="flag-icon flag-icon-es"></span>Spanish</a>
+					</div>
+				</li>
+				
+        <li><a href="#" id="change-bg">Change Background</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+		<h2 id="greeting">Hello, World!</h2>
+		<p id="content">This is the content of the webpage.</p>
+		<div id="additional-content">
+			<h3 id="info">Additional Content</h3>
+			<p id="info">This is some additional information.</p>
+		</div>
+		<div id="more-content">
+			<h3 id="details">More Content</h3>
+			<p id="details">These are some additional details.</p>
+		</div>
+	</main>
+	
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Change Background Photo</h3>
+      <form>
+        <label for="image-url">Image URL:</label>
+        <input type="text" id="image-url" placeholder="Enter the image URL">
+				<br>
+        <button type="submit">Change</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
